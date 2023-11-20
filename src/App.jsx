@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import MiApi from './MiApi'
-import Buscador from './Buscador'
+import React from 'react';
+import './App.css';
+import MiApi from './MiApi';
+import Buscador from './Buscador';
 
 function App() {
   return (
     <>
 
-      <span>Natita la más bonita</span>
-      <MiApi />
+      <div className="title">
+        <h1>Busca tu próximo destino</h1>
+      </div>
       <Buscador />
+      <MiApi />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
